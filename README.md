@@ -23,23 +23,31 @@ Microsoft SQL Server, SQL Server Management Studio (SSMS)
 Power BI
 GitHub
 
-Project Structure
+## Project Structure
+
+```text
 cafe-analysis/
 │
 ├── python/
 │   └── cafe_code.py
+│
 ├── sql/
 │   ├── Cafe_Staging.sql
 │   ├── Cafe_Modeling.sql
 │   └── Cafe_Analysis.sql
+│
 ├── powerbi/
 │   ├── Dashboard.pbix
 │   └── Dashboard.jpg
+│
 ├── docs/
 │   └── issues_solutions.md
+│
 └── README.md
+```
 
 Project Workflow:
+```text
 Raw CSV
     ↓
 Python Data Cleaning
@@ -51,7 +59,7 @@ Data Validation & Transformation
 Business Analysis Queries
     ↓
 Power BI Dashboard
-
+```
 
 Data Cleaning and Preparation:
 The dataset required multiple cleaning and validation steps before analysis:
@@ -65,15 +73,16 @@ Reconstructed product names where possible using transaction prices
 Replaced unresolved values with "Unknown"
 
 The analysis focuses on answering the following questions:
-
+```text
 Which products generate the highest revenue?
 Which products are sold most frequently?
 What is the revenue distribution by quarter?
 What is the payment method distribution?
 What is the average transaction value?
 Which products contribute most to total sales?
+```
 
-
+```text
 The Power BI dashboard provides:
 
 Total Revenue KPI
@@ -84,15 +93,12 @@ Revenue Trends by Month
 Best selling products
 
 Interactive slicer allows filtering by time period.
-
-Challenges and Solutions
+```
 
 A detailed description of all technical issues encountered during the project can be found in:
-
 docs/issues_and_solutions.md
 
 The document includes:
-
 SQL Server import problems
 Data quality issues
 Handling invalid values
@@ -101,8 +107,8 @@ Column naming standardization
 Lessons Learned
 
 Throughout this project I gained practical experience in:
-
-Designing an end-to-end analytics workflow
+```text
+Designing an end-to-end analytics workflow	
 Data cleaning using Python and Pandas
 Working with SQL Server import limitations
 Building staging and transformation processes
@@ -111,6 +117,7 @@ Creating business-oriented SQL queries
 Designing interactive dashboards in Power BI
 Documenting analytical projects for GitHub portfolios
 Maintaining reproducible and well-structured project repositories
+```
 
 Created as a portfolio project to demonstrate practical skills in:
 Data Analytics
